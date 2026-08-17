@@ -1,12 +1,19 @@
 {
-  "name": "statute-and-seal",
+  "name": "statute-and-seal-frontend",
   "private": true,
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "install:all": "npm install --prefix frontend",
-    "dev": "npm run dev --prefix frontend",
-    "build": "npm install --prefix frontend --no-audit --no-fund && npm run build --prefix frontend",
-    "preview": "npm run preview --prefix frontend"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
+    "vite": "^6.3.5"
   }
 }
